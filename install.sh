@@ -1,8 +1,8 @@
 # Update
 sudo apt update & sudo apt upgrade
 
-# Install Base Packages
-sudo apt install curl git tmux -y
+# Install Packages
+sudo apt install curl tmux -y
 
 # Install Window Manager
 # Getting alternative repository because i3 4.22 is not yet on official ubuntu repo
