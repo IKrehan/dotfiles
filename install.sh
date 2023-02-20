@@ -53,6 +53,6 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo apt install gh -y
 
 # Create sym links
-ln -s ./config/* ~/.config
-mkdir ~/fonts && ln -s ./fonts/* ~/.fonts
-ln -s ./config/zsh/.zshrc ~/.zshrc
+ln -s /home/krehan/Dev/dotfiles/config/* ~/.config
+mkdir ~/fonts && ln -s /home/krehan/Dev/dotfiles/fonts/* ~/.fonts
+ln -s /home/krehan/Dev/dotfiles/config/zsh/.zshrc ~/.zshrc
