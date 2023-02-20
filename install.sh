@@ -2,7 +2,7 @@
 sudo apt update & sudo apt upgrade
 
 # Install Base Packages
-sudo apt install curl git neovim tmux -y
+sudo apt install curl git tmux -y
 
 # Install Window Manager
 # Getting alternative repository because i3 4.22 is not yet on official ubuntu repo
@@ -24,4 +24,20 @@ sudo chsh -s $(which zsh)
 mkdir ~/.antigen
 curl -L git.io/antigen > ~/.antigen/antigen.zsh
 
+# Instal nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install --lts
+nvm use --lts
+
+#Install Neovim
+# from repo to get 0.8 version instead of 0.6
+sudo apt install ninja-build gettext libtool libtool-bin cmake g++ pkg-config unzip doxygen -y
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
+sudo make install 
+rm -rf neovim
+
+# Instal Packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
