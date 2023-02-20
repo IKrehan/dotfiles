@@ -1,5 +1,5 @@
 # Update
-sudo apt update & sudo apt upgrade
+sudo apt update & sudo apt upgrade -y
 
 # Install Packages
 sudo apt install curl tmux -y
