@@ -45,4 +45,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 mkdir ~/.fonts
 ln -s /home/krehan/Dev/dotfiles/config/* ~/.config
 ln -s /home/krehan/Dev/dotfiles/fonts/* ~/.fonts
-ln -s /home/krehan/Dev/dotfiles/config/zsh/* ~
+ln -s /home/krehan/Dev/dotfiles/config/zsh/.zshrc ~/.zshrc
