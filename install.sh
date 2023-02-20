@@ -41,3 +41,8 @@ rm -rf neovim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
+# Create sym links
+mkdir ~/.fonts
+ln -s /home/krehan/Dev/dotfiles/config/* ~/.config
+ln -s /home/krehan/Dev/dotfiles/fonts/* ~/.fonts
+ln -s /home/krehan/Dev/dotfiles/config/zsh/* ~
