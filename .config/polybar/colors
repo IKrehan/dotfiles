@@ -1,0 +1,13 @@
+[colors]
+background = #1D2021
+background-alt = #1D2021
+foreground = #A8994
+primary = #BDAE93
+secondary = #98971A
+alert = #45885888
+disabled = #A88994
+green = #98971A
+red = #CC241D
+yellow = #D79921
+blue = #458588
+purple = #B16286
