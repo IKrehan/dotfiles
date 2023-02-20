@@ -15,10 +15,10 @@ sudo apt install i3 polybar picom -y
 # Install alacritty
 sudo add-apt-repository ppa:aslatter/ppa -y
 sudo apt install alacritty -y
-
+k
 # Install ZSH
 sudo apt install zsh -y
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 # Install Antigen (Oh My ZSH)
 mkdir ~/.antigen
@@ -41,8 +41,18 @@ rm -rf neovim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
+# Install Terraform
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
+# Install Github CLI
+type -p curl >/dev/null || sudo apt install curl -y
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+&& sudo apt update \
+&& sudo apt install gh -y
+
 # Create sym links
-mkdir ~/.fonts
-ln -s /home/krehan/Dev/dotfiles/config/* ~/.config
-ln -s /home/krehan/Dev/dotfiles/fonts/* ~/.fonts
-ln -s /home/krehan/Dev/dotfiles/config/zsh/.zshrc ~/.zshrc
+ln -s ./config/* ~/.config
+mkdir ~/fonts && ln -s ./fonts/* ~/.fonts
+ln -s ./config/zsh/.zshrc ~/.zshrc
