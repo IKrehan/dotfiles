@@ -1,0 +1,17 @@
+configuration {
+  modi: "drun,settings:~/.local/bin/rofi-control-center.py";
+	font: "Sauce Code Pro 12";
+	show-icons: true;
+	terminal: "rofi-sensible-terminal";
+	kb-screenshot: "Alt+S";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "gruvbox-dark"
