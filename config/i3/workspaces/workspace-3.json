@@ -1,0 +1,26 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1010,
+       "width": 1880,
+       "x": 20,
+       "y": 50
+    },
+    "marks": [],
+    "name": "* Threads - Ton - 1 new item - Slack",
+    "percent": 1,
+    "swallows": [
+       {
+       // "class": "^Slack$",
+       // "instance": "^slack$",
+       // "machine": "^stone$",
+       // "title": "^\\*\\ Threads\\ \\-\\ Ton\\ \\-\\ 1\\ new\\ item\\ \\-\\ Slack$",
+       // "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+

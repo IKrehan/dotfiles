@@ -1,0 +1,50 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 528,
+       "width": 424,
+       "x": 1068,
+       "y": 276
+    },
+    "marks": [],
+    "name": "Pritunl Client",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^pritunl$",
+       // "instance": "^pritunl$",
+       // "machine": "^stone$",
+       // "title": "^Pritunl\\ Client$",
+       // "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 533,
+       "width": 484,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "Cisco AnyConnect Secure Mobility Client",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^Com\\.cisco\\.anyconnect\\.gui$",
+       // "instance": "^com\\.cisco\\.anyconnect\\.gui$",
+       // "machine": "^stone$",
+       // "title": "^Cisco\\ AnyConnect\\ Secure\\ Mobility\\ Client$"
+       }
+    ],
+    "type": "con"
+}
+
