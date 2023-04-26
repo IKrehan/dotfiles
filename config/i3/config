@@ -9,8 +9,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xinput set-prop "DELL0A20:00 06CB:CE65 Touchpad" "libinput Tapping Enabled" 1
 
 # Bind Win + Space to alternate keyboard layout
-exec --no-startup-id "setxkbmap -layout us,br"
-exec --no-startup-id "setxkbmap -option 'grp:win_space_toggle'"
+exec setxkbmap -layout us,br
+exec setxkbmap -option "grp:win_space_toggle"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -153,8 +153,8 @@ bindsym $mod+r mode "resize"
 # Gaps
 gaps inner 20
 
-default_border none
-default_floating_border none
+default_border pixel
+default_floating_border pixel
 
 # I3 Windows Theme
 set $bg #282828
