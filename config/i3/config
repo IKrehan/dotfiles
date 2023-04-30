@@ -153,9 +153,6 @@ bindsym $mod+r mode "resize"
 # Gaps
 gaps inner 20
 
-default_border pixel
-default_floating_border pixel
-
 # I3 Windows Theme
 set $bg #282828
 set $white #ebdbb2
